@@ -1,0 +1,42 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Oct  8 18:28:16 2018] ***
+compiled with version: 7.3.0 on 08 October 2018 10:13:19
+os: Linux-4.15.0-33-generic #36-Ubuntu SMP Wed Aug 15 16:00:05 UTC 2018
+nodename: even-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/even/Documents/python_web
+writing pidfile to uwsgi.pid
+detected binary path: /home/even/.virtualenvs/flask/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/even/Documents/python_web
+your processes number limit is 31582
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.6.5 (default, Apr  1 2018, 05:46:30)  [GCC 7.3.0]
+Python main interpreter initialized at 0x55c0fffab7e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55c0fffab7e0 pid: 76637 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 76637)
+spawned uWSGI worker 1 (pid: 76645, cores: 2)
+spawned uWSGI worker 2 (pid: 76647, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+Mon Oct  8 18:29:48 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Oct  8 18:29:48 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Oct  8 18:29:48 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Oct  8 18:29:48 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!

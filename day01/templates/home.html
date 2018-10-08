@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script>
+        $(function () {
+            $('#word').keyup(function() {
+                $.ajax({
+                    url: 'https://sug.so.360.cn/suggest?callback=suggest_so&encodein=utf-8&encodeout=utf-8&format=json&fields=word',
+                    type: 'get',
+                    dataType: 'jsonp',
+                    jsonp:"jsonpCallback",
+                    jsonpCallback:"suggest_so",
+                    data: { word: "黑盒测试" },
+                    success:function (data) {
+                        alert(data);
+                        console.log(data.result[0])
+                    },
+                    error:function (data) {
+                        console.log(data)
+                    }
+                })
+
+                })
+            })
+                
+    </script>
+</head>
+
+<body>
+    <input type="text" name="" id="word">
+    <ul class="list"></ul>
+</body>
+
+</html>
